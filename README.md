@@ -25,7 +25,7 @@
 **[Awesome Books ES6]**
 
 ## 🛠 Built With <a name="built-with"></a>
-- [x] HTML, CSS, Webpack and JavaScript
+- [x] HTML, CSS and JavaScript
 - [x] Linters: Lighthouse, Webhint, Stylelint and ESLint
 - [x] VS Code
 
@@ -56,18 +56,18 @@ Install this project with:
 
 In the terminal, go to your file directory and run this command.
 
-Run 'npm install' in your code terminal to install the packages.
-
 ```
 $ git clone https://github.com/Odongo006/My-Portfolio-Project.git
 ```
 ### Usage
 
-- Install live server extension for your code editor to view the project or directly use the index.html file to open the project.
+To run the project, execute the following command: 
+- Repository[@repo](https://github.com/Odongo006/My-Portfolio-Project)
 
-- Use "npm run build" to compile the webpack.
 
-- Use "npm run dev to" start the local server.
+
+
+
 
 ### Run tests
 
