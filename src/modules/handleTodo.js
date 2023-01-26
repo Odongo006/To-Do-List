@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import setLocalStorage from './setLocalStorage.js';
 
 const todoContainer = document.querySelector('.todo-container');
