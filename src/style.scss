@@ -7,3 +7,134 @@ body {
   font-family: $font;
   color: $primary-color;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boxshadow-div {
+  width: 650px;
+  height: auto;
+  box-shadow: 5px 5px 4px #e4e4e4;
+  margin: 70px auto;
+}
+
+.mainbox {
+  width: 100%;
+  height: 100%;
+  box-shadow: -5px -5px 4px #e4e4e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header */
+.mainbox .header {
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainbox .header .arrow-rotate {
+  color: #a9a9a9;
+  cursor: pointer;
+}
+
+.mainbox .header .arrow-rotate:hover {
+  color: #000;
+}
+
+/* add todo */
+.mainbox .todo-input-div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #a9a9a9;
+  border-left: none;
+  border-right: none;
+}
+
+.mainbox .todo-input-div .input {
+  border: none;
+  outline: none;
+  width: 95%;
+  text-indent: 5px;
+  padding: 5px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.mainbox .todo-input-div .input::placeholder {
+  font-style: italic;
+}
+
+.mainbox .todo-input-div .plus-icon {
+  margin-right: 35px;
+  cursor: pointer;
+  color: #a9a9a9;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.mainbox .todo-input-div .plus-icon:hover {
+  color: #000;
+}
+
+/* todo container */
+.mainbox .todo-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 20px;
+  list-style: none;
+}
+
+.mainbox .todo-container .todo {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a9a9a9;
+  padding: 10px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+}
+
+.label {
+  outline: none;
+}
+
+.elippse-icon {
+  cursor: pointer;
+  margin-right: -10px;
+  color: red;
+}
+
+/* clear all */
+.mainbox .clear-all {
+  box-shadow: -5px -5px 4px #e4e4e4;
+  color: #a9a9a9;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+}

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -23,9 +24,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: [
-          'style-loader', 'css-loader','sass-loader',
+          'style-loader', 'css-loader', 'sass-loader',
         ],
       },
     ],
