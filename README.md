@@ -22,7 +22,7 @@
 
 # 📖 [Hello Microcerse] <a name="about-project"></a>
 
-**[Awesome Books ES6]**
+**[To-Do List]**
 
 ## 🛠 Built With <a name="built-with"></a>
 - [x] HTML, CSS and JavaScript
