@@ -24,6 +24,8 @@
 
 **[To-Do List]**
 
+> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. In this particular repo, We are building this To-do list with using HTML, CSS, JavaScript (ES6), and Webpack.
+
 ## 🛠 Built With <a name="built-with"></a>
 - [x] HTML, CSS and JavaScript
 - [x] Linters: Lighthouse, Webhint, Stylelint and ESLint
@@ -76,6 +78,14 @@ To check for linters, use the files provided by [Microverse](https://github.com/
 $ npm install
 ```
 
+### Key Features
+- Webpack
+- Linters
+
+### Future Features
+
+- Babel
+- React
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
