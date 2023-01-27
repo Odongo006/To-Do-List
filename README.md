@@ -57,12 +57,12 @@ Install this project with:
 In the terminal, go to your file directory and run this command.
 
 ```
-$ git clone https://github.com/Odongo006/My-Portfolio-Project.git
+$ git clone https://github.com/Odongo006/To-Do-List.git
 ```
 ### Usage
 
 To run the project, execute the following command: 
-- Repository[@repo](https://github.com/Odongo006/My-Portfolio-Project)
+- Repository[@repo](https://github.com/Odongo006/To-Do-List.git)
 
 
 
