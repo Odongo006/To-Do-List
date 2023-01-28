@@ -7,14 +7,14 @@ const handleTodo = (todo, todoItems) => {
   items.forEach((item) => {
     const idInNum = Number(item.querySelector('.left').getAttribute('data-time'));
     if (idInNum === todo.ID) {
-      // mark complete
-      item.querySelector('.checkbox').addEventListener('change', () => {
-        const itemIndex = todoItems.indexOf(todo);
-        const currentItem = todoItems[itemIndex];
-        currentItem.Completed = !currentItem.Completed;
-        todoItems.splice(itemIndex, 1, currentItem);
-        setLocalStorage(todoItems);
-      });
+      // // mark complete
+      // item.querySelector('.checkbox').addEventListener('change', () => {
+      //   const itemIndex = todoItems.indexOf(todo);
+      //   const currentItem = todoItems[itemIndex];
+      //   currentItem.Completed = !currentItem.Completed;
+      //   todoItems.splice(itemIndex, 1, currentItem);
+      //   setLocalStorage(todoItems);
+      // });
       // update todo
       item.querySelector('.label').addEventListener('blur', () => {
         const itemIndex = todoItems.indexOf(todo);
