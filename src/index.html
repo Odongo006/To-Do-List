@@ -10,37 +10,20 @@
 </head>
 <body>
     <!-- wrapper -->
-    <main class="wrapper">
-        <div class="boxshadow-div">
-            <!-- mainbox -->
-            <section class="mainbox">
-
-                <!-- header -->
-                <header class="header">
-                    <h1>Today's To Do</h1>
-                    <span class="arrow-rotate">
-                        <i class="fa-solid fa-arrows-rotate fa-lg"></i>
-                    </span>
-                </header>
-
-                <!-- add todo -->
-                <form class="todo-input-div" id="addTodos-form">
-                    <input class="input" type="text" placeholder="Add to your list..." required/>
-                    <button type="submit" class="plus-icon">
-                        <i class="fa-solid fa-plus fa-lg"></i>
-                    </button>
-                </form>
-
-                <!-- todo container -->
-                <ul class="todo-container"></ul>
-
-                <!-- clear all -->
-                <button type="button" class="clear-all">Clear all completed</button>
-            
-            </section>
-            <!-- end of mainbox -->
-        </div>
-    </main>
+    <main class="container">
+        <section class="container-wrapper">
+          <h1 class="header-text">Today's To Do<span class="fa fa-refresh fa-custom"></span></h1>
+          
+          <form id="input-form" method="post" action="index.html">
+            <div class="input-wrapper">
+              <input type="text" name="todo-item-input" id="todo-item-input" class="todo-item-input" placeholder="Add to your list..." required/>
+              <span class="fa fa-level-down fa-custom"></span>
+            </div>
+          </form>
+          <ul id="to-do-list" class="to-do-list"></ul>
+          <div class="closure-text">Clear all completed</div>
+        </section>    
+      </main> 
     <!-- end of wrapper -->
 </body>
 </html>
