@@ -1,131 +1,161 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 * {
-  margin: 0;
+  box-sizing: border-box;
   padding: 0;
+  margin: 0;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ul,
+li {
+  list-style-type: none;
 }
 
-.boxshadow-div {
-  width: 650px;
-  height: auto;
-  box-shadow: 5px 5px 4px #e4e4e4;
-  margin: 70px auto;
+.container {
+  display: flex;
+  justify-content: center;
 }
 
-.mainbox {
-  width: 100%;
-  height: 100%;
-  box-shadow: -5px -5px 4px #e4e4e4;
+.container-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  width: 70%;
+  border: 1px solid #ddd;
+  box-shadow: 6px 6px 6px #ddd, -6px -6px 6px #ddd;
+  margin-top: 3.5rem;
 }
 
-/* header */
-.mainbox .header {
-  width: 90%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.mainbox .header .arrow-rotate {
-  color: #a9a9a9;
-  cursor: pointer;
-}
-
-.mainbox .header .arrow-rotate:hover {
-  color: #000;
-}
-
-/* add todo */
-.mainbox .todo-input-div {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  border: 1px solid #a9a9a9;
-  border-left: none;
-  border-right: none;
-}
-
-.mainbox .todo-input-div .input {
+.container-wrapper form input[type="text"] {
   border: none;
-  outline: none;
-  width: 95%;
-  text-indent: 5px;
-  padding: 5px;
-  font-size: 16px;
-  margin-left: 30px;
-}
-
-.mainbox .todo-input-div .input::placeholder {
+  outline: 0;
+  width: 100%;
+  display: block;
+  font-size: 18px;
   font-style: italic;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
 }
 
-.mainbox .todo-input-div .plus-icon {
-  margin-right: 35px;
+.container-wrapper input[type="checkbox"] {
   cursor: pointer;
-  color: #a9a9a9;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  margin-top: -3px;
+}
+
+.container-wrapper input[type="text"]:disabled {
   border: none;
-  background: transparent;
-  outline: none;
+  background-color: #fff;
 }
 
-.mainbox .todo-input-div .plus-icon:hover {
-  color: #000;
+.container-wrapper input[type=checkbox]::before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 14px;
+  color: transparent !important;
+  content: "\f00c";
+  background-color: #fff;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(154, 149, 149);
+  margin-right: 6px;
 }
 
-/* todo container */
-.mainbox .todo-container {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  padding: 20px;
-  list-style: none;
+.container-wrapper input[type=checkbox]:checked::before {
+  color: rgb(108, 103, 108) !important;
 }
 
-.mainbox .todo-container .todo {
-  margin: 15px 0;
+.container-wrapper ul li {
+  border-bottom: 1px solid #ddd;
+  cursor: move;
+}
+
+.header-text {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #a9a9a9;
-  padding: 10px;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: rgb(108, 103, 108);
+  border-bottom: 1px solid #ddd;
 }
 
-input:checked + label {
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.todo-item {
+  display: flex;
+  padding: 1rem 2rem;
+  font-size: 20px;
+}
+
+.strike-line {
   text-decoration: line-through;
 }
 
-.label {
-  outline: none;
+.fa-level-down {
+  padding-right: 2rem;
+  padding-top: 1rem;
+  font-size: 20px;
 }
 
-.elippse-icon {
-  cursor: pointer;
-  margin-right: -10px;
-  color: red;
+.d-none {
+  display: none;
 }
 
-/* clear all */
-.mainbox .clear-all {
-  box-shadow: -5px -5px 4px #e4e4e4;
-  color: #a9a9a9;
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.trash-btn {
+  margin-left: 0.5rem;
+}
+
+.fa:hover {
+  color: rgb(57, 52, 52);
+}
+
+.fa.fa-arrows-rotate,
+.fa.fa-level-down {
+  transform: rotate(90deg);
+}
+
+.fa.fa-level-down {
+  position: absolute;
+  padding-bottom: 20px;
+  right: 20px;
+  top: 15px;
+}
+
+.fa-custom,
+.fa-ellipsis-v {
+  color: #989790;
+}
+
+.highlight {
+  color: #000;
+  background-color: rgb(236, 249, 242);
+}
+
+.highlight .fa {
+  color: #000;
+}
+
+.item-description {
   border: none;
-  outline: none;
+  width: 100%;
   font-size: 16px;
-  cursor: pointer;
-  background-color: #fff;
+  outline: 0;
+  padding-left: 8px;
+  color: rgb(108, 103, 108);
+  background-color: rgb(236, 249, 242);
+}
+
+.closure-text {
+  background-color: #fafafa;
+  text-align: center;
+  font-weight: 100;
+  padding: 1.2rem;
+  color: rgb(135, 129, 135);
+  font-size: 18px;
 }
