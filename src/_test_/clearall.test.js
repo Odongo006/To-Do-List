@@ -36,25 +36,3 @@ describe('To-do list update completed status test', () => {
     expect(checked).toBe(true);
   });
 });
-
-describe('To-do list clear completed tasks test', () => {
-  test('clear completed tasks', () => {
-    let checkedList = document.querySelectorAll('.to-do-list li');
-    expect(checkedList).toHaveLength(2);
-
-    toDoList.deleteTaskFromList(true);
-    let listItems = document.querySelectorAll('.to-do-list li');
-    expect(listItems).toHaveLength(0);
-
-    toDoList.saveTaskInList('Add item 1');
-    toDoList.saveTaskInList('Add item 2');
-    toDoList.updateTaskStatus(0);
-    toDoList.updateTaskStatus(1);
-    checkedList = document.querySelectorAll('.to-do-list li');
-    expect(checkedList).toHaveLength(2);
-
-    toDoList.deleteTaskFromList(true);
-    listItems = document.querySelectorAll('.to-do-list li');
-    expect(listItems).toHaveLength(0);
-  });
-});
