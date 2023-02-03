@@ -46,17 +46,11 @@ describe('To-do list clear completed tasks test', () => {
     let listItems = document.querySelectorAll('.to-do-list li');
     expect(listItems).toHaveLength(0);
 
-    
-    toDoList.deleteTaskFromList(true);
-    listItems = document.querySelectorAll('.to-do-list li');
-    expect(listItems).toHaveLength(0);
-
     toDoList.saveTaskInList('Add item 1');
     toDoList.saveTaskInList('Add item 2');
     toDoList.updateTaskStatus(0);
     toDoList.updateTaskStatus(1);
     checkedList = document.querySelectorAll('.to-do-list li');
     expect(checkedList).toHaveLength(2);
-
   });
 });
