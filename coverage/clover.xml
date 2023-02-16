@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1675429057591" clover="3.2.0">
-  <project timestamp="1675429057591" name="All files">
+<coverage generated="1675871158940" clover="3.2.0">
+  <project timestamp="1675871158941" name="All files">
     <metrics statements="83" coveredstatements="57" conditionals="23" coveredconditionals="19" methods="29" coveredmethods="22" elements="135" coveredelements="98" complexity="0" loc="83" ncloc="83" packages="1" files="2" classes="2"/>
     <file name="toDoList.js" path="C:\Users\USER\Desktop\Microverse-Works\Config-Webpack\src\modules\toDoList.js">
       <metrics statements="40" coveredstatements="39" conditionals="21" coveredconditionals="19" methods="13" coveredmethods="13"/>

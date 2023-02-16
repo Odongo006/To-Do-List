@@ -137,6 +137,7 @@ table.coverage td span.cline-any {
 }
 .coverage-summary tr { border-bottom: 1px solid #bbb; }
 .keyline-all { border: 1px solid #ddd; }
+
 .coverage-summary td,
 .coverage-summary th { padding: 10px; }
 .coverage-summary tbody { border: 1px solid #bbb; }
