@@ -1,4 +1,3 @@
-import 'lodash';
 import './style.css';
 import ToDoList from './modules/toDoList.js';
 
@@ -7,6 +6,7 @@ const inputValue = inputForm.elements['todo-item-input'];
 const enterValue = document.querySelector('.fa-level-down');
 const toDoList = new ToDoList();
 const clearCompleted = document.querySelector('.closure-text');
+
 const addInputValue = ({ toDoList }) => {
   if (inputValue.value !== '') {
     toDoList.saveTaskInList(inputValue.value);
