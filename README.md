@@ -100,6 +100,12 @@ $ npm install
 - LinkedIn: [@HenryOdongo](https://www.linkedin.com/in/henry-odongo-91b830182/)
 - Website: [@Portfolio](https://odongo006.github.io/My-Portfolio-Project/)
 
+👤 **Moses Ayo**
+
+- GitHub: [@AyoMoses1](https://github.com/AyoMoses1)
+- Twitter: [@Ayo_Moses1](https://twitter.com/Ayo_Moses1)
+- LinkedIn: [Ayo Moses](https://www.linkedin.com/in/ayo-moses-493946184/)
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing "></a>
